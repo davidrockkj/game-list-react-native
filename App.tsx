@@ -4,6 +4,7 @@ import { useState } from 'react';
 import games, { IGames } from './src/data/games';
 import Header from './src/components/Header';
 import Footer from './src/components/Footer';
+import GameList from './src/pages/Gamelist';
 import styles from './AppStyles';
 
 export default function App() {
@@ -12,6 +13,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Header />
+      <GameList
+        games={filteredGames}
+      />
       <Footer />
       <StatusBar style="light" />
     </View>
