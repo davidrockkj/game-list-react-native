@@ -22,3 +22,5 @@ const styles = StyleSheet.create({
     borderBottomColor: '#000',
   },
 })
+
+export default styles;
