@@ -12,7 +12,7 @@ function Header () {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={styles.header}>
       <Text style={styles.headerTitle}>Top Games</Text>
       <TextInput
         style={styles.input}
