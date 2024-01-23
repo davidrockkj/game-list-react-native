@@ -1,6 +1,6 @@
 import { View, Text, Image } from "react-native";
 import { IGames } from "../../data/games";
-import styles from "../Header/styles";
+import styles from "./styles";
 
 interface GameCardProps {
   game: IGames
