@@ -10,9 +10,15 @@ import styles from './AppStyles';
 export default function App() {
   const [filteredGames, setFilteredGames] = useState<IGames[]>(games);
 
+  // Função para ativar filtro no 'setFilteredGames'
+  const handleFilterChange = (filterText: string) => {
+    const filtered = games.filter(game => game.name.toLowerCase().includes(filterText.toLocaleLowerCase()));
+    setFilteredGames(filtered);
+  }
+
   return (
     <View style={styles.container}>
-      <Header />
+      <Header onFilterChange={handleFilterChange} />
       <GameList
         games={filteredGames}
       />
