@@ -12,7 +12,15 @@ function Header () {
   };
 
   return (
-
+    <View style={styles.container}>
+      <Text style={styles.headerTitle}>Top Games</Text>
+      <TextInput
+        style={styles.input}
+        placeholder='Procure por nome'
+        value={filter}
+        onChangeText={handleFilter}
+      />
+    </View>
   )
 }
 
