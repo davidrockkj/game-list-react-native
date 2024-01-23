@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#000',
   },
-  footerText: {
+  footerTitle: {
     fontSize: 14,
     fontWeight: 'bold',
     color: '#fff',
