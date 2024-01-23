@@ -16,7 +16,7 @@ function GameCard({game}: GameCardProps) {
 
   return (
     <View style={styles.card}>
-      <Image source={{ uri: game.image }} />
+      <Image style={styles.image} source={{ uri: game.image }} />
       <Text style={styles.title}>{game.name}</Text>
       <Text style={styles.data}>{`Pataforma: ${game.platform}`}</Text>
       <Text style={styles.data}>{`Gênero: ${game.genre}`}</Text>
